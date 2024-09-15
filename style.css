@@ -3760,20 +3760,18 @@ footer {
         margin: 1.5rem auto;
     }
 
-    .auth-box, .cart {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .wishlist-section {
-        width: 95%;
-    }
-
     .checkout-container, .cart-group {
         display: grid; 
         grid-template-columns: 1fr;
         row-gap: 0.7rem; 
-        margin: 1.5rem 1rem;
+    }
+
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-group:nth-child(2) {
+        padding: 1.2rem;
     }
 
     .newsletter-container {
@@ -3785,9 +3783,13 @@ footer {
         display: none; 
     }
 
-    .table-wrapper {
+    .newsletter-input, .newsletter-btn {
+        padding-inline: 1rem;
+    }
+
+    .table-container {
         overflow-x: auto;
-        max-width: 100%; 
+        padding: 0 0 1.5rem;
     }
 
     .table tr th,
@@ -3797,6 +3799,15 @@ footer {
 
     .btn-cart.btn-md {
         font-size: 0.85rem; 
+    }
+
+    .cart-total {
+        padding: 1.3rem;
+    }
+
+    .payment-img {
+        max-width: 250px;
+        margin-bottom: 10px;
     }
 }
 
@@ -3809,7 +3820,7 @@ footer {
     }
 
     .auth-box {
-        width: 70%;
+        width: 80%;
     }
 
     .checkout-container, .cart-group {
@@ -3827,9 +3838,9 @@ footer {
         display: none;
     }
 
-    .table-wrapper {
+    .table-container {
         overflow-x: auto;
-        max-width: 100%;
+        padding: 0 0 1.5rem;
     }
 
     .table tr th,
@@ -3838,8 +3849,12 @@ footer {
     }
 
     .cart, .wishlist-section {
-        width: 90%;
+        width: 95%;
         align-items: center;
+    }
+
+    .payment-img {
+        max-width: 300px;
     }
 }
 
@@ -3859,9 +3874,9 @@ footer {
         display: none;
     }
 
-    .table-wrapper {
+    .table-container {
         overflow-x: auto;
-        max-width: 100%;
+        padding: 0 0 1.5rem;
     }
 
     .table tr th,
@@ -3870,7 +3885,7 @@ footer {
     }
 
     .cart, .wishlist-section {
-        width: 90%;
+        width: 92%;
         align-items: center;
     }
 }
@@ -3882,6 +3897,10 @@ footer {
         margin: auto;
     }
 
+    .checkout-container {
+       max-width: 90%;
+    }
+
     .newsletter-container {
         grid-template-columns: 1fr;
         row-gap: 0.5rem;
@@ -3891,9 +3910,9 @@ footer {
         display: none;
     }
 
-    .table-wrapper {
+    .table-container {
         overflow-x: auto;
-        max-width: 100%;
+        padding: 0 0 1.5rem;
     }
 
     .table {
@@ -3925,7 +3944,7 @@ footer {
     }
 
     .cart, .wishlist-section {
-        width: 90%;
+        width: 92%;
         align-items: center;
     }
 }
